@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  user: one
-  photo: one
-  body: MyText
+comment_one:
+  user: nik
+  photo: photo_one
+  body: AWESOME SAUCE
 
-two:
-  user: two
-  photo: two
-  body: MyText
+comment_two:
+  user: don
+  photo: photo_two
+  body: STUFFF

@@ -1,0 +1,6 @@
+<h1>All Photos</h1>
+<%= @photos.each do |photo| %>
+  <%= image_tag photo.image.url(:medium) %>
+  <%= link_to "View", photo_path(photo.id) %>
+<hr>
+  <% end %>

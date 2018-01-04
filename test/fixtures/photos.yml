@@ -1,11 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  user: one
-  image_uid: MyString
-  image_name: MyString
+photo_one:
+  user: nik
 
-two:
-  user: two
-  image_uid: MyString
-  image_name: MyString
+photo_two:
+  user: don

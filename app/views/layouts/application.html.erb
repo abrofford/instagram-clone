@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <ul>
+      <li><%= link_to "Log Out", sessions_path("current"), method: "delete" %>
+        <% if current_user.present? %></li>
+      <li><%= link_to "Edit Profile", edit_user_path(current_user.id) %>
+        <% end %></li>
+      <li><% if current_user.present? %>
+      <%= link_to "Upload Photo", new_photo_path(current_user.id) %>
+      <% end %></li>
+    </ul>
     <%= yield %>
   </body>
 </html>
