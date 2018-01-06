@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
   namespace :api, constraints: {format: "json"} do
     resources :photos, only: [:show, :index]
+    resources :comments, only: [:show, :index]
+    resources :users, only: [:index, :show]
   end
 end
